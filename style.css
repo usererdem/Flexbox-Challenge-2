@@ -101,3 +101,18 @@ header {
   font-weight: 400;
   font-size: 21px;
 }
+
+@media (max-width: 600px) {
+  .features__text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main__content {
+    flex-direction: column;
+  }
+  
+  .main__content--image {
+    width: 80%;
+  }
+}
