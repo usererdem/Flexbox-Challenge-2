@@ -6,6 +6,8 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   font-size: 1.3rem;
+  line-height: 1.6;
+  color: #222C2A;
 }
 
 img {
@@ -15,14 +17,18 @@ img {
 h1 {
   font-size: 3rem;
   margin-top: 0;
+  line-height: 1.1;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
 }
-/* Laoyout */
+
+/* Layout */
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   max-width: 1128px;
 
-  padding: 5% 0;
+  padding: 25% 0;
 }
 /* Header Section */
 header {
@@ -35,25 +41,22 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* min-height: 660px; */
-
-  padding: 15% 0;
-  margin: 0 auto;
-  width: 65%;
-  max-width: 1100px;
+  min-height: 660px;
+  justify-content: center;
 }
 
 .header__title--h1 {
   color: #824936;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-family: 'Playfair Display', serif;
 }
 
 .header__title--h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.5em;
-  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  font-size: 1.125rem;
+  color: #222C2A;
+  margin-bottom: 1rem;
 }
 
 /* Features Section */
@@ -70,7 +73,7 @@ header {
 
 .features__text {
   display: flex;
-  gap: 40px;
+  gap: 10px;
 }
 
 /* Main Section */
@@ -102,7 +105,11 @@ header {
   font-size: 21px;
 }
 
-@media (max-width: 600px) {
+.col {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
   .features__text {
     flex-direction: column;
     text-align: center;
@@ -112,7 +119,8 @@ header {
     flex-direction: column;
   }
   
-  .main__content--image {
-    width: 80%;
+  .header__title--h1{
+    font-size: 3rem;
   }
+  
 }
